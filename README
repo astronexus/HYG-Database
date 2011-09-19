@@ -2,6 +2,8 @@ Welcome to the HYG star database archive.  The most current version of the datab
 
 Database field descriptions:
 
+The hygfull.csv file contains these fields:
+
    1. StarID: The database primary key from a larger "master database" of stars.
    2. HD: The star's ID in the Henry Draper catalog, if known.
    3. HR: The star's ID in the Harvard Revised catalog, which is the same as its number in the Yale Bright Star Catalog.
@@ -14,5 +16,8 @@ Database field descriptions:
   10. AbsMag: The star's absolute visual magnitude (its apparent magnitude from a distance of 10 parsecs).
   11. Spectrum: The star's spectral type, if known.
   12. ColorIndex: The star's color index (blue magnitude - visual magnitude), where known.
+
+Thr hygxyz.csv file contains these fields, plus some additional fields useful for mapping tools:
+
   13. X,Y,Z: The Cartesian coordinates of the star, in a system based on the equatorial coordinates as seen from Earth. +X is in the direction of the vernal equinox (at epoch 2000), +Z towards the north celestial pole, and +Y in the direction of R.A. 6 hours, declination 0 degrees.
   14. VX,VY,VZ: The Cartesian velocity components of the star, in the same coordinate system described immediately above. They are determined from the proper motion and the radial velocity (when known). The velocity unit is parsecs per year; these are small values (around 10-5 to 10-6), but they enormously simplify calculations using parsecs as base units for celestial mapping.
