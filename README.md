@@ -24,7 +24,7 @@ Fields in the database:
 1. id: The database primary key.
 2. hip: The star's ID in the Hipparcos catalog, if known.
 3. hd: The star's ID in the Henry Draper catalog, if known.
-4. hd: The star's ID in the Harvard Revised catalog, which is the same as its number in the Yale Bright Star Catalog.
+4. hr: The star's ID in the Harvard Revised catalog, which is the same as its number in the Yale Bright Star Catalog.
 5. gl: The star's ID in the third edition of the Gliese Catalog of Nearby Stars.
 6. bf: The Bayer / Flamsteed designation, primarily from the Fifth Edition of the Yale Bright Star Catalog. This is a combination of the two designations. The Flamsteed number, if present, is given first; then a three-letter abbreviation for the Bayer Greek letter; the Bayer superscript number, if present; and finally, the three-letter constellation abbreviation. Thus Alpha Andromedae has the field value "21Alp And", and Kappa1 Sculptoris (no Flamsteed number) has "Kap1Scl".
 7. ra, dec: The star's right ascension and declination, for epoch and equinox 2000.0. 
