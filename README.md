@@ -1,4 +1,8 @@
 ### **Welcome to the HYG star database archive.  The most current version of the database will always be found here. 
+
+#### License and Versions:
+
+This data set is licensed by a Creative Commons Attribution-ShareAlike license. For more details, read the Creative Commons page (https://creativecommons.org/licenses/by-sa/2.5/).
  
 For additional background details, and older versions of the database, visit  http://www.astronexus.com/hyg.
 
