@@ -59,7 +59,7 @@ Fields in the database:
 
 1. ra, dec: The object's right ascension and declination, for epoch 2000.0 and equinox 2000.0. 
 2. type:  The object's type, as in the Historically Corrected NGC (see "dso\_source").  A full list of types is in
-http://www.ngcicproject.org/public_HCNGC/The_HCNGC_intro.pdf, p. 19.  This is the canonical list of types for objects
+http://ngcicproject.observers.org/public_HCNGC/The_HCNGC_intro.pdf, p. 19.  This is the canonical list of types for objects
 in this catalog, regardless of source.
 3. const: The object's constellation, if known.
 4. mag:  The object's visual magnitude.
@@ -68,7 +68,7 @@ in this catalog, regardless of source.
 7. id: Database unique ID.
 8. r1, r2:  Semi-major and semi-minor axes of the object, in arcminutes.  If r2 is undefined, r1 is interpreted as the object's radius.
 9. angle: Position angle of the semimajor axis of the object, in degrees.  Only defined if r1 and r2 are present.
-10.  dso\_source:  Source identifier for the object's position, size, and magnitude.  Valid values are:  "0": miscellaneous, limited detail (e.g. Wikipedia).  "1": NGC 2000 (Sinott, 1988). "2": Historically Corrected New General Catalogue from the NGC/IC project (http://www.ngcicproject.org).  "3": PGC galaxy catalog (http://leda.univ-lyon1.fr/).  "4": Collinder open cluster catalog, items not already in Messier,Caldwell,NGC,IC and with defined size and magnitude (http://www.cloudynights.com/item.php?item_id=2544).  "5": Perek-Kohoutek catalog IDs, from original (Perek + Kouhoutek, 1967) and update (Perek + Kohoutek, 2001). "6":  Faint globulars (Palomar + Terzian) from http://www.astronomy-mall.com/Adventures.In.Deep.Space/obscure.htm and http://www.astronomy-mall.com/Adventures.In.Deep.Space/palglob.htm.
+10.  dso\_source:  Source identifier for the object's position, size, and magnitude.  Valid values are:  "0": miscellaneous, limited detail (e.g. Wikipedia).  "1": NGC 2000 (Sinott, 1988). "2": Historically Corrected New General Catalogue from the NGC/IC project (http://ngcicproject.observers.org/).  "3": PGC galaxy catalog (http://leda.univ-lyon1.fr/).  "4": Collinder open cluster catalog, items not already in Messier,Caldwell,NGC,IC and with defined size and magnitude (http://www.cloudynights.com/item.php?item_id=2544).  "5": Perek-Kohoutek catalog IDs, from original (Perek + Kouhoutek, 1967) and update (Perek + Kohoutek, 2001). "6":  Faint globulars (Palomar + Terzian) from http://www.astronomy-mall.com/Adventures.In.Deep.Space/obscure.htm and http://www.astronomy-mall.com/Adventures.In.Deep.Space/palglob.htm.
 11. id1, cat1:  Primary (most commonly used) ID number/designation and catalog name for this object.
 12. id2, cat2:  Additional, frequently-used ID and catalog name for this object (e.g., an NGC or IC number for Messier objects).
 13. dupid, dupcat:  Duplicate ID number+catalog name. Unlike id2 and cat2, a duplicate ID normally means this object is better known by the duplicate ID, and should be excluded from display.
