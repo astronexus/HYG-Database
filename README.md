@@ -42,7 +42,7 @@ Fields in the database:
 15. ci: The star's color index (blue magnitude - visual magnitude), where known.
 16. x,y,z: The Cartesian coordinates of the star, in a system based on the equatorial coordinates as seen from Earth. +X is in the direction of the vernal equinox (at epoch 2000), +Z towards the north celestial pole, and +Y in the direction of R.A. 6 hours, declination 0 degrees.
 17. vx,vy,vz: The Cartesian velocity components of the star, in the same coordinate system described immediately above. They are determined from the proper motion and the radial velocity (when known). The velocity unit is parsecs per year; these are small values (around 1 millionth of a parsec per year), but they enormously simplify calculations using parsecs as base units for celestial mapping.
-18. rarad, decrad, pmrarad, prdecrad:  The positions in radians, and proper motions in radians per year.
+18. rarad, decrad, pmrarad, pmdecrad:  The positions in radians, and proper motions in radians per year.
 19. bayer:  The Bayer designation as a distinct value
 20. flam:  The Flamsteed number as a distinct value
 21. con:  The standard constellation abbreviation
