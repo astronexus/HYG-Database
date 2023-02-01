@@ -59,7 +59,7 @@ Fields in the database:
 
 1. ra, dec: The object's right ascension and declination, for epoch 2000.0 and equinox 2000.0. 
 2. type:  The object's type, as in the Historically Corrected NGC (see "dso\_source").  A full list of types is in
-http://www.ngcicproject.org/public_HCNGC/The_HCNGC_intro.pdf, p. 19.  This is the canonical list of types for objects
+https://ngcicproject.observers.org/public_HCNGC/The_HCNGC_intro.pdf, p. 19.  This is the canonical list of types for objects
 in this catalog, regardless of source.
 3. const: The object's constellation, if known.
 4. mag:  The object's visual magnitude.
