@@ -1,4 +1,4 @@
-### **Welcome to the HYG star database archive.  The most current version of the database will always be found here. 
+### Welcome to the HYG star database archive.  The most current version of the database will always be found here.
 
 #### License and Versions:
 
