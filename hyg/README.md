@@ -13,6 +13,17 @@ For the most current version of the applications using this database, visit http
 
 #### v3/hyg.csv:  This is the current version (3) of the HYG stellar database.  It is similar to the main version 2 (hygxyz.csv) file, but has a few updates.  The older file is now deprecated.
 
+##### Recent changes
+
+No stars have been added or deleted since v3 was released in 2014, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
+
+* March 21, 2023: Merged a PR to add all the IAU Working Group For Star Names standard/official names to the proper name field.
+* April 10, 2023: Added a few proper names to nearby stars that lacked one, e.g. "Ross 128"
+* April 11, 2023: Moved the proper name 'Guniibuu' for 36 Oph from the B component to the A component of the multiple star.
+* April 24, 2023: Changed some deprecated Gliese catalog abbreviations ("NN" and "Wo") to the preferred "GJ". See https://cds.unistra.fr/cgi-bin/Dic-Simbad?GJ for comments on the labels. The original catalog numbers from the first catalog (in the range 1 - 999) still retain the "Gl" abbreviation.
+
+##### General content notes
+
 1. All stars now have both an epoch and equinox of 2000.0.  In v2 of the catalog, all three primary source catalogs either had or were adjusted to equinox 2000, but all 3 had different epochs, leading to small position errors at high magnifications.
 2. The Flamsteed numbers now include many that were not in the _Yale Bright Star Catalog_, the
 primary reference for these numbers in the original catalog.  In particular, it now contains all valid numbers listed in "Flamsteed's Missing Stars", M. Wagman, JHA xviii (1987), p 210-223.
