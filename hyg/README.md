@@ -11,17 +11,27 @@ For the most current version of the applications using this database, visit http
 ### Database field descriptions:
 
 
-#### v3/hyg.csv:  This is the current version (3) of the HYG stellar database.  It is similar to the main version 2 (hygxyz.csv) file, but has a few updates.  The older file is now deprecated.
+#### v3/hyg_v32.csv:  This is the current version (3.2) of the HYG stellar database.  It is similar to the main version 2 (hygxyz.csv) file, but has a few updates.  The older v2 files are now deprecated.
 
 ##### Recent changes
 
-No stars have been added or deleted since v3 was released in 2014, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
+There are now three subversions of v3. The latest version (as of April 27, 2023) is v3.2.
+
+v3.0: The original version, released in 2014.
+
+v3.1: An update from early 2023. No stars have been added or deleted, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
 
 * March 21, 2023: Merged a PR to add all the IAU Working Group For Star Names standard/official names to the proper name field.
 * April 10, 2023: Added a few proper names to nearby stars that lacked one, e.g. "Ross 128"
 * April 11, 2023: Moved the proper name 'Guniibuu' for 36 Oph from the B component to the A component of the multiple star.
 * April 24, 2023: Changed some deprecated Gliese catalog abbreviations ("NN" and "Wo") to the preferred "GJ". See https://cds.unistra.fr/cgi-bin/Dic-Simbad?GJ for comments on the labels. The original catalog numbers from the first catalog (in the range 1 - 999) still retain the "Gl" abbreviation.
 
+v3.2: During processing of the AT-HYG catalog, I found 2 stars in HYG that are currently listed as "nonexistent" in the literature (https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP+114110&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id)
+
+* HIP 114110 (primary "id" = 113739)
+* HIP 114176 (primary "id" = 113815) 
+
+These two rows were simply deleted, so to maintain continuity with other HYG primary IDs in version 3.x, there are now gaps in the sequence for the missing primary IDs 113739 and 113815.
 ##### General content notes
 
 1. All stars now have both an epoch and equinox of 2000.0.  In v2 of the catalog, all three primary source catalogs either had or were adjusted to equinox 2000, but all 3 had different epochs, leading to small position errors at high magnifications.
