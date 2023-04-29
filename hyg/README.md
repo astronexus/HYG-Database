@@ -32,6 +32,18 @@ v3.2: During processing of the AT-HYG catalog, I found 2 stars in HYG that are c
 * HIP 114176 (primary "id" = 113815) 
 
 These two rows were simply deleted, so to maintain continuity with other HYG primary IDs in version 3.x, there are now gaps in the sequence for the missing primary IDs 113739 and 113815.
+
+v3.3: Some more updates made during processing of the AT-HYG catalog.
+
+* HIP 57438 has been deleted as a known bad entry (see https://cdsarc.u-strasbg.fr/viz-bin/getCatFile_Redirect/?-plus=-%2b&I/239/errata.htx). As before, primary "id"s in the remaining rows are left unchanged.
+* In general, HYG v3.x used the 2007 data reduction for HIP, but the parallax and Cartesian coordinates for HIP 57146 have been reverted to the 1997 data reduction, based on its likely association with the star HIP 57148 (which has a much smaller parallax) and the better consistency of the 1997 data reduction with the parallax in Gliese.  
+
+* The stars HIP 72509 and 72511 have had their parallaxes and Cartesian coordinates updated according to the notes in https://vizier.cds.unistra.fr/viz-bin/VizieR?-6N&-out.form=H0&//*&-source%3D1239/*notes&HIP%3D72509 : 
+    - "Investigations carried out after the main catalogue was finalised led to a more likely solution for this entry (standard errors in parentheses): RA = 222.38436571 (5.01), Dec = -26.10858075 (3.59), Par = 45.59 (5.53), PM_RA = -1202.63 (6.32), PM_Dec = -182.10 (4.58),with F1 = 0 and F2 = -0.92, and processed as single star."
+* The star HIP 63721 had a similar reprocessing of its parallax and Cartesian coordinates, as in its notes at https://vizier.cds.unistra.fr/viz-bin/VizieR?-6N&-out.form=H0&//*&-source%3D1239/*notes&HIP%3D63721 :
+    - "Investigations carried out after the main catalogue was finalised led to a more likely solution for this entry (standard errors in parentheses):RA = 195.87120242 (1.16), Dec = 25.79668135 (1.02), Par = 3.21 (1.50), PM_RA = -36.26 (1.30), PM_Dec = -21.75 (0.98), with F1 = 0 and F2 = -1.09, and processed as single star."
+* The previous three steps affected several stars that could not be reconciled with other lists of nearby (D < 20 ly) stars with well-verified data.
+* HIP 84140 (Gliese 661) has been given a proper name value ("EZ Aqr") for consistency with other dim, very nearby (D < 4 pc) stars. This also simplifies some data handling for AT-HYG.
 ##### General content notes
 
 1. All stars now have both an epoch and equinox of 2000.0.  In v2 of the catalog, all three primary source catalogs either had or were adjusted to equinox 2000, but all 3 had different epochs, leading to small position errors at high magnifications.
