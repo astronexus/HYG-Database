@@ -15,7 +15,7 @@ For the most current version of the applications using this database, visit http
 
 ##### Recent changes
 
-There are now three subversions of v3. The latest version (as of April 27, 2023) is v3.2.
+There are now multiple sub-versions of v3. The latest version (as of April 29, 2023) is v3.3.
 
 v3.0: The original version, released in 2014.
 
