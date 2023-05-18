@@ -11,11 +11,11 @@ For the most current version of the applications using this database, visit http
 ### Database field descriptions:
 
 
-#### v3/hyg_v32.csv:  This is the current version (3.2) of the HYG stellar database.  It is similar to the main version 2 (hygxyz.csv) file, but has a few updates.  The older v2 files are now deprecated.
+#### v3/hyg_v34.csv:  This is the current version (3.4) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
 
 ##### Recent changes
 
-There are now multiple sub-versions of v3. The latest version (as of April 29, 2023) is v3.3.
+There are now multiple sub-versions of v3. The latest version (as of May 17, 2023) is v3.4.
 
 v3.0: The original version, released in 2014.
 
@@ -24,7 +24,7 @@ v3.1: An update from early 2023. No stars have been added or deleted, so there a
 * March 21, 2023: Merged a PR to add all the IAU Working Group For Star Names standard/official names to the proper name field.
 * April 10, 2023: Added a few proper names to nearby stars that lacked one, e.g. "Ross 128"
 * April 11, 2023: Moved the proper name 'Guniibuu' for 36 Oph from the B component to the A component of the multiple star.
-* April 24, 2023: Changed some deprecated Gliese catalog abbreviations ("NN" and "Wo") to the preferred "GJ". See https://cds.unistra.fr/cgi-bin/Dic-Simbad?GJ for comments on the labels. The original catalog numbers from the first catalog (in the range 1 - 999) still retain the "Gl" abbreviation.
+* April 24, 2023: Changed some deprecated Gliese catalog abbreviations ("NN" and "Wo") to the preferred "GJ". See https://cds.unistra.fr/cgi-bin/Dic-Simbad?GJ for comments on the labels. The original catalog numbers from the first edition of the catalog (in the range 1 - 999) still retain the "Gl" abbreviation.
 
 v3.2: During processing of the AT-HYG catalog, I found 2 stars in HYG that are currently listed as "nonexistent" in the literature (https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP+114110&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id)
 
@@ -44,6 +44,16 @@ v3.3: Some more updates made during processing of the AT-HYG catalog.
     - "Investigations carried out after the main catalogue was finalised led to a more likely solution for this entry (standard errors in parentheses):RA = 195.87120242 (1.16), Dec = 25.79668135 (1.02), Par = 3.21 (1.50), PM_RA = -36.26 (1.30), PM_Dec = -21.75 (0.98), with F1 = 0 and F2 = -1.09, and processed as single star."
 * The previous three steps affected several stars that could not be reconciled with other lists of nearby (D < 20 ly) stars with well-verified data.
 * HIP 84140 (Gliese 661) has been given a proper name value ("EZ Aqr") for consistency with other dim, very nearby (D < 4 pc) stars. This also simplifies some data handling for AT-HYG.
+
+v3.4: A few more updates made during processing of the AT-HYG catalog.
+
+A few errors were found with Gliese IDs and fixed. Specifically:
+
+* The HIP stars HIP 10789, 14101, and 73531 do not correspond to stars in Gliese, and were mistakenly assigned Gliese IDs at some point during the original compilation of HYG v2 or v3. The Gliese IDs previously associated with them have been removed. 
+* The three Gliese stars disassociated from these three HIP stars were added as standalone Gliese stars at the end of the HYG catalog, with new sequential primary IDs. Data for these 3 stars was taken directly from the Gliese catalog, but the RA and Dec values have been converted to epoch+equinox 2000.0 via SIMBAD.
+* The HIP star 21765 originally had a Gliese ID of GJ 9163A. This has been changed to GJ 9163 (no "A") to correspond better to other catalogs' cross-references, including HIP. (This star is indeed a double, with A and B components, but very few catalogs besides Gliese reference the individual components as such.)
+* The HIP stars 36626 and 36627 were assigned Gliese IDs Gl 277B and Gl 277A respectively; those two IDs were incorrectly swapped. The IDs have been swapped back to the correct association of HIP 36626 = Gl 277A, HIP 36627 = Gl 277B.
+* The Gliese IDs Gl 333.2A and Gl 333.2B were originally assigned to HIP 44263 and a non-HIP star respectively. These Gliese IDs were also swapped. In addition to swapping the IDs back to the correct stars, their catalog IDs of "Ross 686" and "Ross 687" have also been added, as an extra disambiguation for AT-HYG purposes.
 ##### General content notes
 
 1. All stars now have both an epoch and equinox of 2000.0.  In v2 of the catalog, all three primary source catalogs either had or were adjusted to equinox 2000, but all 3 had different epochs, leading to small position errors at high magnifications.
