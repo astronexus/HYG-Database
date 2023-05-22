@@ -36,7 +36,7 @@ Also according to SIMBAD, the following HIP IDs were assigned an incorrect HD ID
 
 * HIP 16747: correct ID is HD 22159
 * HIP 18443: correct ID is HD 286368
-* HIP 18759: correct ID is HD 238148
+* HIP 18759: correct ID is HD 281458
 * HIP 20065: correct ID is HD 283549
 * HIP 20272: correct ID is HD 27369
 * HIP 21983: correct ID is HD 286996
