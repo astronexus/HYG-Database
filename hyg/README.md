@@ -55,6 +55,8 @@ Also according to SIMBAD, the following HIP IDs were assigned an incorrect HD ID
 * HIP 98255: correct ID is HD 350851
 * HIP 100848: correct ID is HD 346569
 
+For better handling in AT-HYG, the HIP ID 7751 assigned to Gl 66A was deleted. Both components keep a proper name of "p Eridani".
+
 Finally, the HIP ID of 55203 assigned to Xi UMa is not associated with a valid set of data and has been deleted. The two components of Xi UMa currently have valid HD, HR, and Gliese IDs.
 
 v3.4: A few more updates made during processing of the AT-HYG catalog.
