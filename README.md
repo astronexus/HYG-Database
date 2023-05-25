@@ -10,16 +10,14 @@ For the most current version of the applications using this database, visit http
 
 ### Database Collections
 
-There is now a major new update to this collection: Augmented Tycho-HYG or AT-HYG for short. This is the Tycho-2 catalog with added GAIA distance data (Augmented Tycho) combined with HYG. 
+There is now a major new update to this collection: Augmented Tycho-HYG or AT-HYG for short. This is the Tycho-2 catalog with added Gaia distance data (Augmented Tycho) combined with HYG. 
 
 #### Augmented Tycho - HYG (AT-HYG)
 ##### Directory /athyg - Currently 2,552,166 stars
 
-This is a new (April, 2023) database set that includes the entire Tycho-2 catalog (minus a very small number of stars that do not have valid position or brightness data), augmented with distance data from GAIA Data Release 3 (2020-2022). The Tycho + GAIA data have then been combined with HYG to add useful name and catalog ID data for the brighter stars in the data set. 
+This is a new (May, 2023) database set that includes all the stars in the Tycho-2 catalog (minus a very small number of stars that do not have valid position or brightness data), augmented with distance data from Gaia Data Release 3 (2020-2022). The Tycho + Gaia data have then been combined with HYG to add useful name and catalog ID data for the brighter stars in the data set. 
 
-AT-HYG came out of a desire to have a larger data set than is available in HYG, especially one with the new data from GAIA. AT-HYG is intended to replace HYG for applications that can use the larger catalog size conveniently.
-
-Note that at the moment, AT-HYG is still an alpha release with version number v0.x. Version 1.0 will be released once a few additional data items have been added. I expect this to occur in May, 2023.
+AT-HYG came out of a desire to have a larger data set than is available in HYG, especially one with the new data from Gaia. AT-HYG is intended to replace HYG for applications that can use the larger catalog size conveniently.
 
 See athyg/README.md for details about the AT-HYG catalog.
 #### HYG (Hipparcos-Yale-Gliese)
