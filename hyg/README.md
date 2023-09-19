@@ -11,11 +11,24 @@ For the most current version of the applications using this database, visit http
 ### Database field descriptions:
 
 
-#### v3/hyg_v35.csv:  This is the current version (3.5) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
+#### v3/hyg_v35_1.csv:  This is the current version (3.5.1) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
 
 ##### Recent changes
 
-There are now multiple sub-versions of v3. The latest version (as of May 21, 2023) is v3.5.
+There are now multiple sub-versions of v3. The latest version (as of Sept. 18, 2023) is v3.5.1.
+
+v3.5.1: A minor update to fix a few small errors in the "constellation" field.
+
+The following four stars had Flamsteed IDs that were either invalid from the start, or were historically valid but no longer so because the star is in a different modern constellation.
+
+These four stars are:
+
+* HYG ID 10342: Old Flamsteed ID was 6 Per; is now in And
+* HYG ID 22400: Old Flamsteed ID was 1 Aur; is now in Per
+* HYG ID 29366: A far southern star (in Dor) that had a very wrong Flamsteed ID of "9 Lyn".
+* HYG ID 84413: Old Flamsteed ID was 66 Her; is now in Oph
+
+This update corrects these stars (the constellations are updated and the Flamsteed numbers removed). HYG v3.6 will correct a few other stars that were assigned a wrong constellation as well as ones that are completely missing a constellation designation right now.
 
 v3.5: A number of errors in the HIP->HD mapping used to create HYG were found during processing of the AT-HYG catalog.
 
