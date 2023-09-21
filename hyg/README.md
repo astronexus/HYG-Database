@@ -11,7 +11,7 @@ For the most current version of the applications using this database, visit http
 ### Database field descriptions:
 
 
-#### v3/hyg_v35_1.csv:  This is the current version (3.6) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
+#### v3/hyg_v36.csv:  This is the current version (3.6) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
 
 ##### Recent changes
 
