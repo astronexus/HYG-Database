@@ -11,11 +11,65 @@ For the most current version of the applications using this database, visit http
 ### Database field descriptions:
 
 
-#### v3/hyg_v35_1.csv:  This is the current version (3.5.1) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
+#### v3/hyg_v35_1.csv:  This is the current version (3.6) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
 
 ##### Recent changes
 
-There are now multiple sub-versions of v3. The latest version (as of Sept. 18, 2023) is v3.5.1.
+There are now multiple sub-versions of v3. The latest version (as of Sept. 20, 2023) is v3.6.
+
+v3.6: A more comprehensive update to fix a larger set of constellation field errors (see https://github.com/astronexus/HYG-Database/issues/21 for discussion)
+
+This update used a higher-precision version of constellation label determination to look for incorrectly labeled stars. It is worth pointing out that in this case, "incorrectly" often
+means "off by only a few arcseconds". The vast majority of previously existing labels were correct.
+
+A brief summary for the more technically-minded:
+
+The official constellation boundaries were defined in 1930 and followed exact lines of right ascension and declination at the start of the year 1875. Over time, precession (a gradual shift in the position
+of the Earth's axis) causes the boundaries to become skewed compared to the current lines of R.A. and declination. The easiest way to find out which constellation a star is in is to mathematically "unwind" this motion 
+(there are calculation methods for doing this) and comparing the star's 1875 position to the exact boundary lines at the time.
+
+The specific updates I did were:
+
+* replacing the previous version of precession calculation, which was accurate to about 20" over 1.25 centuries, with a much higher-precision conversion available through the astropy module for
+Python (https://docs.astropy.org/en/stable/index.html). The astropy module has the added benefit of being able to do multiple coordinate system changes (including precession) in parallel very quickly, much faster
+than iterating through a list of stars and doing the conversions one by one.
+* adding a custom calculation for nutation, a small but significant periodic variation in the Earth's axial position on top of precession itself, to an accuracy of ~0.25".  This was missing in my original
+calculation and is not done automatically by the astropy module. The correction used the 4 largest terms in the conventional breakdown of the components. The smallest term had a maximum value of ~0.2", with all smaller terms 
+(neglected here) of 0.1" or less.
+
+At this point, I was able to resolve most differences reported in the discssion on Github. Specifically:
+
+* 22 stars had their "con" (constellation) labels changed, because the higher-precision calculations put them on the other side of a constellation boundary in 1875
+* 1629 stars were completely missing values for the "con" (constellation) label entirely, and were assigned whatever constellation the new calculations produced. 
+* all stars mentioned in the Github issue discussion but one were converted here or in the previous version (3.5.1), which fixed some more serious errors.
+* the one unconverted star (HYG ID 78313) has an 1875 position that is at most 0.5" away from the boundary, and it is currently unclear whose calculations are correct.
+
+The stars that had their constellation labels changed are:
+
+* HYG ID 3865: old label And, new label Psc
+* HYG ID 7751: old label Phe, new label Eri
+* HYG ID 19173: old label Hyi, new label Ret
+* HYG ID 27992: old label Ori, new label Mon
+* HYG ID 30112: old label Ori, new label Mon
+* HYG ID 52886: old label Hya, new label Crt
+* HYG ID 58221: old label Leo, new label Com
+* HYG ID 59234: old label UMa, new label CVn
+* HYG ID 67599: old label Aps, new label Cha
+* HYG ID 72017: old label Vir, new label Lib
+* HYG ID 74021: old label Boo, new label Ser
+* HYG ID 85957: old label Ara, new label Aps
+* HYG ID 87694: old label Sco, new label Sgr
+* HYG ID 89105: old label Aps, new label Pav
+* HYG ID 91382: old label Ser, new label Aql
+* HYG ID 92907: old label Sct, new label Sgr
+* HYG ID 93308: old label Vul, new label Sge
+* HYG ID 95468: old label Dra, new label Cyg
+* HYG ID 100777: old label Tel, new label Ind
+* HYG ID 101541: old label Cyg, new label Cep
+* HYG ID 105623: old label Mic, new label PsA
+* HYG ID 117789: old label And, new label Peg
+
+In all these cases, the star was within a few arcseconds of a boundary line, so even the older, "wrong" positions are scarcely noticeable in practice.
 
 v3.5.1: A minor update to fix a few small errors in the "constellation" field.
 
