@@ -17,7 +17,7 @@ For the most current version of the applications using this database, visit http
 
 There are now multiple sub-versions of v3. The latest version (as of Sept. 20, 2023) is v3.6.
 
-v3.6: A more comprehensive update to fix a larger set of constellation field errors (see https://github.com/astronexus/HYG-Database/issues/21 for discussion)
+###### v3.6: A more comprehensive update to fix a larger set of constellation field errors (see https://github.com/astronexus/HYG-Database/issues/21 for discussion)
 
 This update used a higher-precision version of constellation label determination to look for incorrectly labeled stars. It is worth pointing out that in this case, "incorrectly" often
 means "off by only a few arcseconds". The vast majority of previously existing labels were correct.
@@ -71,7 +71,7 @@ The stars that had their constellation labels changed are:
 
 In all these cases, the star was within a few arcseconds of a boundary line, so even the older, "wrong" positions are scarcely noticeable in practice.
 
-v3.5.1: A minor update to fix a few small errors in the "constellation" field.
+###### v3.5.1: A minor update to fix a few small errors in the "constellation" field.
 
 The following four stars had Flamsteed IDs that were either invalid from the start, or were historically valid but no longer so because the star is in a different modern constellation.
 
@@ -84,7 +84,7 @@ These four stars are:
 
 This update corrects these stars (the constellations are updated and the Flamsteed numbers removed). HYG v3.6 will correct a few other stars that were assigned a wrong constellation as well as ones that are completely missing a constellation designation right now.
 
-v3.5: A number of errors in the HIP->HD mapping used to create HYG were found during processing of the AT-HYG catalog.
+###### v3.5: A number of errors in the HIP->HD mapping used to create HYG were found during processing of the AT-HYG catalog.
 
 According to SIMBAD, the following HIP IDs do not have a corresponding HD ID, and the originally-assigned HD IDs have been removed:
 
@@ -126,7 +126,7 @@ For better handling in AT-HYG, the HIP ID 7751 assigned to Gl 66A was deleted. B
 
 Finally, the HIP ID of 55203 assigned to Xi UMa is not associated with a valid set of data and has been deleted. The two components of Xi UMa currently have valid HD, HR, and Gliese IDs.
 
-v3.4: A few more updates made during processing of the AT-HYG catalog.
+###### v3.4: A few more updates made during processing of the AT-HYG catalog.
 
 A few errors were found with Gliese IDs and fixed. Specifically:
 
@@ -136,7 +136,7 @@ A few errors were found with Gliese IDs and fixed. Specifically:
 * The HIP stars 36626 and 36627 were assigned Gliese IDs Gl 277B and Gl 277A respectively; those two IDs were incorrectly swapped. The IDs have been swapped back to the correct association of HIP 36626 = Gl 277A, HIP 36627 = Gl 277B.
 * The Gliese IDs Gl 333.2A and Gl 333.2B were originally assigned to HIP 44263 and a non-HIP star respectively. These Gliese IDs were also swapped. In addition to swapping the IDs back to the correct stars, their catalog IDs of "Ross 686" and "Ross 687" have also been added, as an extra disambiguation for AT-HYG purposes.
 
-v3.3: Some more updates made during processing of the AT-HYG catalog.
+###### v3.3: Some more updates made during processing of the AT-HYG catalog.
 
 * HIP 57438 has been deleted as a known bad entry (see https://cdsarc.u-strasbg.fr/viz-bin/getCatFile_Redirect/?-plus=-%2b&I/239/errata.htx). As before, primary "id"s in the remaining rows are left unchanged.
 * In general, HYG v3.x used the 2007 data reduction for HIP, but the parallax and Cartesian coordinates for HIP 57146 have been reverted to the 1997 data reduction, based on its likely association with the star HIP 57148 (which has a much smaller parallax) and the better consistency of the 1997 data reduction with the parallax in Gliese.  
@@ -149,14 +149,14 @@ v3.3: Some more updates made during processing of the AT-HYG catalog.
 * HIP 84140 (Gliese 661) has been given a proper name value ("EZ Aqr") for consistency with other dim, very nearby (D < 4 pc) stars. This also simplifies some data handling for AT-HYG.
 
 
-v3.2: During processing of the AT-HYG catalog, I found 2 stars in HYG that are currently listed as "nonexistent" in the literature (https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP+114110&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id)
+###### v3.2: During processing of the AT-HYG catalog, I found 2 stars in HYG that are currently listed as "nonexistent" in the literature (https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP+114110&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id)
 
 * HIP 114110 (primary "id" = 113739)
 * HIP 114176 (primary "id" = 113815) 
 
 These two rows were simply deleted, so to maintain continuity with other HYG primary IDs in version 3.x, there are now gaps in the sequence for the missing primary IDs 113739 and 113815.
 
-v3.1: An update from early 2023. No stars have been added or deleted, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
+###### v3.1: An update from early 2023. No stars have been added or deleted, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
 
 * March 21, 2023: Merged a PR to add all the IAU Working Group For Star Names standard/official names to the proper name field.
 * April 10, 2023: Added a few proper names to nearby stars that lacked one, e.g. "Ross 128"
@@ -164,7 +164,7 @@ v3.1: An update from early 2023. No stars have been added or deleted, so there a
 * April 24, 2023: Changed some deprecated Gliese catalog abbreviations ("NN" and "Wo") to the preferred "GJ". See https://cds.unistra.fr/cgi-bin/Dic-Simbad?GJ for comments on the labels. The original catalog numbers from the first edition of the catalog (in the range 1 - 999) still retain the "Gl" abbreviation.
 
 
-v3.0: The original version, released in 2014.
+###### v3.0: The original version, released in 2014.
 
 ##### General content notes
 
