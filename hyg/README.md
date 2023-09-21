@@ -11,12 +11,20 @@ For the most current version of the applications using this database, visit http
 ### Database field descriptions:
 
 
-#### v3/hyg_v36.csv:  This is the current version (3.6) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
+#### v3/hyg_v36_1.csv:  This is the current version (3.6.1) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
 
 ##### Recent changes
 
-There are now multiple sub-versions of v3. The latest version (as of Sept. 20, 2023) is v3.6.
+There are now multiple sub-versions of v3. The latest version (as of Sept. 21, 2023) is v3.6.1.
 
+###### v3.6.1: Reassign a problem label that was deleted (temporarily) in v3.5.1
+
+This is a very small update to add a label to a single star (HYG 31446)
+
+The star "9 Lyn" was incorrectly assigned to HYG 29366 (HD 43618). This was a result of an incorrect HD ID in the reference used for this ID ("Flamsteed's Missing Stars", M. Wagman, JHA xviii (1987), p 210-223)
+The erroneous label was deleted from HYG 29366 in v. 3.5.1, but the correct assignment was not made at the time (it was not immediately clear if there was a correct assignment to be made).
+
+The correct star for the label "9 Lyn" is HYG 31446 (HD 46318); there was a typo in the reference's HD number. This star now has the Flamsteed ID of "9 Lyn".
 ###### v3.6: A more comprehensive update to fix a larger set of constellation field errors (see https://github.com/astronexus/HYG-Database/issues/21 for discussion)
 
 This update used a higher-precision version of constellation label determination to look for incorrectly labeled stars. It is worth pointing out that in this case, "incorrectly" often
@@ -156,7 +164,9 @@ A few errors were found with Gliese IDs and fixed. Specifically:
 
 These two rows were simply deleted, so to maintain continuity with other HYG primary IDs in version 3.x, there are now gaps in the sequence for the missing primary IDs 113739 and 113815.
 
-###### v3.1: An update from early 2023. No stars have been added or deleted, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
+###### v3.1: Multiple small updates made early in 2023. 
+
+No stars have been added or deleted, so there are no changes to the primary "id" field or to the large majority of primary catalog IDs (HIP, HD, and HR). However, there have been several significant changes in early 2023 to some of the proper names and secondary catalog IDs.
 
 * March 21, 2023: Merged a PR to add all the IAU Working Group For Star Names standard/official names to the proper name field.
 * April 10, 2023: Added a few proper names to nearby stars that lacked one, e.g. "Ross 128"
