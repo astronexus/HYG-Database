@@ -15,7 +15,7 @@ There is now a major new update to this collection: Augmented Tycho-HYG or AT-HY
 #### Augmented Tycho - HYG (AT-HYG)
 ##### Directory /athyg - Currently 2,552,166 stars
 
-This is a new (May, 2023) database set that includes all the stars in the Tycho-2 catalog (minus a very small number of stars that do not have valid position or brightness data), augmented with distance data from Gaia Data Release 3 (2020-2022). The Tycho + Gaia data have then been combined with HYG to add useful name and catalog ID data for the brighter stars in the data set. 
+This is a new (first released May, 2023) database set that includes all the stars in the Tycho-2 catalog (minus a very small number of stars that do not have valid position or brightness data), augmented with distance data from Gaia Data Release 3 (2020-2022). The Tycho + Gaia data have then been combined with HYG to add useful name and catalog ID data for the brighter stars in the data set. 
 
 AT-HYG came out of a desire to have a larger data set than is available in HYG, especially one with the new data from Gaia. AT-HYG is intended to replace HYG for applications that can use the larger catalog size conveniently.
 
