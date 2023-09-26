@@ -20,25 +20,25 @@ Issue 22 (https://github.com/astronexus/HYG-Database/issues/22) described a set 
 
 Of the remaining 16 stars, 4 IDs were simply missing and were added directly. In two cases, the missing ID resulted from a bad HIP->HD cross-reference in the original HYG data, so the HD numbers were updated as well:
 
-HR 1 = HIP 424 (HD unchanged)
-HR 4401 = HIP 55597 (HD unchanged)
-HR 6758 = HIP 88627, HD 165475 (HD changed, HR is associated with this HD)
-HR 8793 = HIP 114167, HD 218269 (HD changed, HR is associated with this HD)
+* HR 1 = HIP 424 (HD unchanged)
+* HR 4401 = HIP 55597 (HD unchanged)
+* HR 6758 = HIP 88627, HD 165475 (HD changed, HR is associated with this HD)
+* HR 8793 = HIP 114167, HD 218269 (HD changed, HR is associated with this HD)
 
 The remaining 12 stars were missing entirely from HIP. They all have Henry Draper numbers, and have had their YBSC data added unchanged, with a couple minor exceptions (noted below):
 
-HR 1704 = HD 33948
-HR 2322 = HD 45291
-HR 2341 = HD 45509
-HR 2366 = HD 45951
-HR 2950 = HD 61563
-HR 3328 = HD 71488
-HR 4210 = HD 93308, eta Carinae
-HR 5343 = variable CN Boo
-HR 6263 = HD 152249
-HR 6660 = HD 162678
-HR 6848 = HD 168021
-HR 9090 = variable W Cet
+* HR 1704 = HD 33948
+* HR 2322 = HD 45291
+* HR 2341 = HD 45509
+* HR 2366 = HD 45951
+* HR 2950 = HD 61563
+* HR 3328 = HD 71488
+* HR 4210 = HD 93308, eta Carinae
+* HR 5343 = variable CN Boo
+* HR 6263 = HD 152249
+* HR 6660 = HD 162678
+* HR 6848 = HD 168021
+* HR 9090 = variable W Cet
 
 These 12 stars were added to the end of the catalog, in order of increasing R.A., and given new sequential HYG IDs (119619-119630). I did this to avoid having to renumber existing stars and breaking continuity with earlier versions.
 
