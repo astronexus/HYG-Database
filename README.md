@@ -15,11 +15,20 @@ There is now a major new update to this collection: Augmented Tycho-HYG or AT-HY
 #### Augmented Tycho - HYG (AT-HYG)
 ##### Directory /athyg - Currently 2,552,166 stars
 
-This is a new (first released May, 2023) database set that includes all the stars in the Tycho-2 catalog (minus a very small number of stars that do not have valid position or brightness data), augmented with distance data from Gaia Data Release 3 (2020-2022). The Tycho + Gaia data have then been combined with HYG to add useful name and catalog ID data for the brighter stars in the data set. 
+This is a new database set (first released May, 2023; v2.x in Sept. 2023) that includes all the stars in the Tycho-2 catalog (minus a very small number of stars that do not have valid position or brightness data), augmented with distance data from Gaia Data Release 3 (2020-2022). The Tycho + Gaia data have then been combined with HYG to add useful name and catalog ID data for the brighter stars in the data set. 
 
 AT-HYG came out of a desire to have a larger data set than is available in HYG, especially one with the new data from Gaia. AT-HYG is intended to replace HYG for applications that can use the larger catalog size conveniently.
 
 See athyg/README.md for details about the AT-HYG catalog.
+
+##### Directory /athyg/v2/subsets - Subsets of the Full Catalog
+
+This directory contains 3 subsets of the current version of AT-HYG that may be more suitable for smaller applications. 
+
+Two of these subsets are the full AT-HYG catalog with a lower (brighter) magnitude cutoff than the primary source catalog (Tycho-2). The third subset, "HYGLike", replicates the HYG catalog's field names and contents for all AT-HYG stars with at least some data from HYG. It is designed to be a drop-in replacement for HYG in many applications that use HYG but would like more recent data when it's available.
+
+See athyg/v2/subsets/README.md for details of the catalog subsets.
+
 #### HYG (Hipparcos-Yale-Gliese)
 ##### Directory /hyg - Currently 119,614 stars
 
