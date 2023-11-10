@@ -2,9 +2,7 @@
 
 ## IMPORTANT NOTE:
 
-The AT-HYG database is being moved into its own repository: "ATHYG-Database". This is currently also hosted on Github at https://github.com/astronexus/ATHYG-Database. This repo is live and will have all future updates to AT-HYG.
-
-No updates to the new AT-HYG files will be posted here, and they will soon be removed entirely.
+The AT-HYG database has been moved into its own repository: "ATHYG-Database". This is currently also hosted on Github at https://github.com/astronexus/ATHYG-Database. This repo is live and will have all future updates to AT-HYG. No updates to the new AT-HYG files will be posted here.
 
 ### License and Versions:
 
