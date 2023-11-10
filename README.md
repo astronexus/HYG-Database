@@ -1,4 +1,8 @@
-## Welcome to the HYG and AT-HYG star database archive.  The most current version of the database will always be found here.
+## Welcome to the HYG star database archive.  The most current version of the database will always be found here.
+
+# IMPORTANT NOTE:
+
+The AT-HYG database is being moved into its own repository: "ATHYG-Database". No updates to the new AT-HYG files will be posted here and they will eventually be removed entirely.
 
 ### License and Versions:
 
