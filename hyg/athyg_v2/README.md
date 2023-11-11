@@ -1,8 +1,12 @@
 ### HYGLike v2.2 (all HYG stars in AT-HYG): 118,971 stars
 
-This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x have Gaia DR3 distance data in AT-HYG v2.2, and thus also in HYGLike v2.2. The only difference in field names is the addition of the `*_src` fields from AT-HYG to identify the sources for each of the various data points. These fields can be dropped if desired in an application using the catalog.
+This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x have Gaia DR3 distance data in AT-HYG v2.2, and thus also in HYGLike v2.2. 
+
+The only difference in field names is the addition of the `*_src` fields from AT-HYG to identify the sources for each of the various data points. These fields can be dropped if desired in an application using the catalog. They are collected at the ends of the CSV rows, so should be easy to remove if desired.
 
 There are a few small differences from both the original HYG and AT-HYG, mostly to handle fields in HYG that are not currently in AT-HYG, as well as to address a difference in design criteria in the two catalogs. HYG prioritized completeness, while AT-HYG prioritized accuracy, especially for 3D positions and velocities. In particular, as a subset of AT-HYG, HYGLike inherits the AT-HYG design criterion of prioritizing accurate position and velocity information for at least one star in every Tycho-2 star system over identifying every last component of every Tycho-2 star system.
+
+If your application doesn't use any of the fields described below, AT-HYG's HYGLike subset is a drop-in replacement for HYG. Otherwise, you may need to make some small changes. However, most of the changes made were designed not to affect the core data from HYG, specifically historical star names + catalog IDs, positions, and velocities:
 
 * Some Gliese _secondary_ and _tertiary_ stars in HYG are not currently matched to cross-references used to build AT-HYG. They will not be in the HYGLike subset. All Gliese _primary_ stars in HYG are present in AT-HYG, and thus also in HYGLike.
 * The HYGLike `id` field is the AT-HYG `id` field rather than the HYG `id` field. 
