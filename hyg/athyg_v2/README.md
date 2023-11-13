@@ -27,7 +27,7 @@ Of the 118,971 stars found for the HYGLike subset, 99% fell into seven basic com
 | Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | (none)          | 10,322 (8.7 %) 
 | Tycho-2  | HIPPARCOS| HIPPARCOS | HIPPARCOS    | (none)          | 8,591 (7.2 %) 
 | Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | HYG sources (1) |4,756 (4.0 %) 
-| Tycho-2  | HIPPARCOS| HIPPARCOS | HIPPARCOS    | HYG sources (2) | 3,320 (2.8 %)
+| Tycho-2  | HIPPARCOS| HIPPARCOS | HIPPARCOS    | HYG sources (1) | 3,320 (2.8 %)
 | Gliese   | Gaia DR3 | Gliese    | Gaia DR3     | Other sources(2)| 823 (0.7 %) 
 | HIPPARCOS| Gaia DR3 | HIPPARCOS | Gaia DR3     | Gaia DR3        | 424 (0.4 %) 
 | All Others|         |           |              |                 | 1165 (1.0 %)
