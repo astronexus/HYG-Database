@@ -1,10 +1,10 @@
-### HYGLike v2.2 (all HYG stars in AT-HYG): 118,971 stars
+### HYGLike v2.3 (all HYG stars in AT-HYG): 118,971 stars
 
-This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x have Gaia DR3 distance data in AT-HYG v2.2, and thus also in HYGLike v2.2. 
+This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x have Gaia DR3 distance data in AT-HYG v2.3, and thus also in HYGLike v2.3. 
 
 The only difference in field names is the addition of the `*_src` fields from AT-HYG to identify the sources for each of the various data points. These fields can be dropped if desired in an application using the catalog. They are collected at the ends of the CSV rows, so should be easy to remove if desired.
 
-### Differences between original HYG (v3.x) and HYGLike subset from AT-HYG (v2.2):
+### Differences between original HYG (v3.x) and HYGLike subset from AT-HYG (v2.3):
 
 There are a few small differences from both the original HYG and AT-HYG, mostly to handle fields in HYG that are not currently in AT-HYG, as well as to address a difference in design criteria in the two catalogs. HYG prioritized completeness, while AT-HYG prioritized accuracy, especially for 3D positions and velocities. In particular, as a subset of AT-HYG, HYGLike inherits the AT-HYG design criterion of prioritizing accurate position and velocity information for at least one star in every Tycho-2 star system over identifying every last component of every Tycho-2 star system.
 
@@ -19,21 +19,21 @@ If your application doesn't use any of the fields described below, AT-HYG's HYGL
 
 ### Summary of data updates in HYGLike
 
-Of the 118,971 stars found for the HYGLike subset, 99% fell into seven basic combinations of source data. Two of these are largely unchanged from the original HYG (except to use Tycho-2 as a basis for positions), but the remaining 5 include at least some data from Gaia DR3:
+Of the 118,971 stars found for the HYGLike subset, over 99% fell into seven basic combinations of source data. Two of these are largely unchanged from the original HYG (except to use Tycho-2 as a basis for positions), but the remaining 5 include at least some data from Gaia DR3:
 
 |Position  |Distance  |Magnitude  |Proper Motions|Radial Velocities|Total Count
 |----------|----------|-----------|--------------|-----------------|-------------
-| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | Gaia DR3        | 89,570 (75.3 %) 
-| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | (none)          | 10,322 (8.7 %) 
+| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | Gaia DR3        | 89,706 (75.4 %) 
+| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | (none)          | 10,386 (8.7 %) 
 | Tycho-2  | HIPPARCOS| HIPPARCOS | HIPPARCOS    | (none)          | 8,591 (7.2 %) 
-| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | HYG sources (1) |4,756 (4.0 %) 
+| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3     | HYG sources (1) | 4,756 (4.0 %) 
 | Tycho-2  | HIPPARCOS| HIPPARCOS | HIPPARCOS    | HYG sources (1) | 3,320 (2.8 %)
-| Gliese   | Gaia DR3 | Gliese    | Gaia DR3     | Other sources(2)| 823 (0.7 %) 
-| HIPPARCOS| Gaia DR3 | HIPPARCOS | Gaia DR3     | Gaia DR3        | 424 (0.4 %) 
-| All Others|         |           |              |                 | 1165 (1.0 %)
+| Gliese   | Gaia DR3 | Gliese    | Gaia DR3     | Other sources(2)| 822 (0.7 %) 
+| HIPPARCOS| Gaia DR3 | HIPPARCOS | Gaia DR3     | Gaia DR3        | 425 (0.4 %) 
+| All Others|         |           |              |                 | 965 (0.8 %)
 
 Just under 90% of all HYG stars got significant updates (Gaia DR3) to distance and proper motion. About 76% of HYG stars also got Gaia DR3 values for radial velocities. The remaining 10% of stars with no Gaia updates are generally stars not available in Gaia in the first place, including most stars brighter than about V = +3, or ones where the distance in Gaia was missing.
 
 (1) HYG sources for radial velocities include the Gliese/GJ catalog, the Yale Bright Star catalog, and the Wilson Evans Batten catalog of radial velocities. In general, W.E.B values were preferred.
 
-(2) Other sources for RVs (specific to Gliese/GJ stars) were based on the SIMBAD lookup results for those stars at the time the AT-HYG v2.2 catalog was compiled. These include a number of highly specialized surveys that apply only to a fairly small number of stars, unlike the sources used for radial velocity data for most of HYG (noted above) and AT-HYG (overwhelmingly Gaia DR3, with some from Gaia DR2).
+(2) Other sources for RVs (specific to Gliese/GJ stars) were based on the SIMBAD lookup results for those stars at the time the AT-HYG v2.3 catalog was compiled. These include a number of highly specialized surveys that apply only to a fairly small number of stars, unlike the sources used for radial velocity data for most of HYG (noted above) and AT-HYG (overwhelmingly Gaia DR3, with some from Gaia DR2).
