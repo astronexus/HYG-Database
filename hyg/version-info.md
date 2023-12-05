@@ -1,8 +1,43 @@
 ### Version changes
 
-The latest version (as of Sept. 25, 2023) is v3.7. 
+The latest version (as of Dec. 5, 2023) is v3.8. 
 
 ##### Previous Versions:
+###### v3.7: Assign missing HR (Yale Bright Star Catalog) stars
+
+Issue 22 (https://github.com/astronexus/HYG-Database/issues/22) described a set of 98 HR (YBSC) IDs that were not found in HYG. Of these, 82 could be ascribed to HR IDs for multiple star components that are not in HIP, or to objects in YBSC that are not stellar (or otherwise unsuitable for HYG).
+
+Of the remaining 16 stars, 4 IDs were simply missing and were added directly. In two cases, the missing ID resulted from a bad HIP->HD cross-reference in the original HYG data, so the HD numbers were updated as well:
+
+* HR 1 = HIP 424 (HD unchanged)
+* HR 4401 = HIP 55597 (HD unchanged)
+* HR 6758 = HIP 88627, HD 165475 (HD changed, HR is associated with this HD)
+* HR 8793 = HIP 114167, HD 218269 (HD changed, HR is associated with this HD)
+
+The remaining 12 stars were missing entirely from HIP. They all have Henry Draper numbers, and have had their YBSC data added unchanged, with a couple minor exceptions (noted below):
+
+* HR 1704 = HD 33948
+* HR 2322 = HD 45291
+* HR 2341 = HD 45509
+* HR 2366 = HD 45951
+* HR 2950 = HD 61563
+* HR 3328 = HD 71488
+* HR 4210 = HD 93308, eta Carinae
+* HR 5343 = variable CN Boo
+* HR 6263 = HD 152249
+* HR 6660 = HD 162678
+* HR 6848 = HD 168021
+* HR 9090 = variable W Cet
+
+These 12 stars were added to the end of the catalog, in order of increasing R.A., and given new sequential HYG IDs (119619-119630). I did this to avoid having to renumber existing stars and breaking continuity with earlier versions.
+
+I made a few small changes to the raw YBSC data when adding these new entries:
+
+* The parallax for HR 6848 of 20 mas (distance: 50 pc) is impossibly large for a V ~ 7 star with spectral type B0 Ib (i.e., blue supergiant). A quick check in SIMBAD confirmed this suspicion. I treated it as invalid (0 mas, placeholder distance value).
+* The stars CN Boo and W Cet have variable magnitude ranges from the General Catalog of Variable Stars (5th ed.). The values for W Cet are unchanged. The values for CN Boo are adjusted to the YBSC visual magnitude, which is slightly different from the one given in the GCVS.
+* I did not calculate true space velocities (vx,vy,vz) for these 12 stars. 9 of the 12 (10 if including the change I made for HR 6848) have no valid parallax in YBSC. The other two are not known to high enough accuracy to justify the effort to calculate them. I intend for AT-HYG to recalculate all of these values to much higher accuracy in the relatively near future, anyway.
+
+
 
 ###### v3.6.1: Reassign a problem label that was deleted (temporarily) in v3.5.1
 
