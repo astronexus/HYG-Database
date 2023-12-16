@@ -1,16 +1,32 @@
 ## Welcome to the HYG star database archive.  The most current version of the database will always be found here.
 
-### License and Versions:
+### Versions and Licensing:
 
-#### CURRENT/hyg_v40.csv
+#### Current version: HYG v4.0 (directory: hyg/CURRENT/hyg_v40.csv)
 
 HYG 4.0 contains 2 updates:
 
 1. 10 more stars have had proper names added. These come from the 2022 update to names from NameExoWorlds (https://www.nameexoworlds.iau.org/2022approved-names). A list of the updated names is in CURRENT/v40_name_updates.md.
-2. The license for HYG v4.x is now Creative Commons BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Previous versions (through HYG 3.8) are licensed
-under the older BY-SA-2.5 (https://creativecommons.org/licenses/by-sa/2.5/).
+2. The licensing for HYG v4.0 is Creative Commons CC BY-SA 4.0, unlike previous versions of the HYG catalog.
+
+---
+
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+#### Previous versions (HYG 2.x, HYG 3.x, directories hyg/v3 and hyg/v2)
+
+These are in the directories hyg/v2 and hyg/v3. As noted above, these have been licensed under Creative Commons BY-SA-2.5
  
-##### General content notes
+#### General content notes
 
 1. All stars now have both an epoch and equinox of 2000.0.  In v2 of the catalog, all three primary source catalogs either had or were adjusted to equinox 2000, but all 3 had different epochs, leading to small position errors at high magnifications.
 2. The Flamsteed numbers now include many that were not in the _Yale Bright Star Catalog_, the
@@ -48,7 +64,7 @@ Fields in the database:
 24. `var`:  Star's standard variable star designation, when known.
 25. `var_min,` `var_max`:  Star's approximate magnitude range, for variables.  This value is based on the Hp magnitudes for the range in the original Hipparcos catalog, adjusted to the V magnitude scale to match the "mag" field.
 
-##### Additiopnal Information
+##### Additional Information
 
 Details about previous versions (through HYG 3.8) are in version-info.md.
 
