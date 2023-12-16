@@ -1,3 +1,5 @@
+### Proper names added to HYG v3.8
+
 |IAU Name|HR ID  |HD ID|HIP ID|Visual magnitude
 |--------|-------|-------|--------|--
 Alasia||HD 168746|HIP 90004|7.95
