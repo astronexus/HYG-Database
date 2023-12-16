@@ -2,30 +2,15 @@
 
 ### License and Versions:
 
-This data set is licensed by a Creative Commons Attribution-ShareAlike license. For more details, read the Creative Commons page (https://creativecommons.org/licenses/by-sa/2.5/).
+#### CURRENT/hyg_v40.csv
+
+HYG 4.0 contains 2 updates:
+
+1. 10 more stars have had proper names added. These come from the 2022 update to names from NameExoWorlds (https://www.nameexoworlds.iau.org/2022approved-names). A list of the updated names is in CURRENT/v40_name_updates.md.
+2. The license for HYG v4.x is now Creative Commons BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Previous versions (through HYG 3.8) are licensed
+under the older BY-SA-2.5 (https://creativecommons.org/licenses/by-sa/2.5/).
  
-For additional background details, and older versions of the database, visit  http://www.astronexus.com/hyg.
-
-For the most current version of the applications using this database, visit http://www.astronexus.com/endeavour. 
-
-#### v3/hyg_v38.csv:  This is the current version (3.8) of the HYG stellar database.  It is very similar to previous v3.x files, but with minor fixes or updates. The older v2 files are now deprecated.
-
-##### Recent changes
-
-There are now multiple sub-versions of v3. The latest version (as of Dec. 5, 2023) is v3.8.
-
-###### v3.8: Update proper names to include more official (IAU) names since previous update
-
-Pull request 16 (https://github.com/astronexus/HYG-Database/pull/16), from June 14, 2019, incorporated a large number of 
-IAU offical star names to the `proper` field in HYG 3.1 and later versions. Since then, there have been a number of updates, with the official IAU site on "naming stars" (https://www.iau.org/public/themes/naming_stars/) showing the current list of IAU-official names as of January 1, 2021, reflecting about a year and a half of updates since the original PR containing a large set of IAU names to add.
-
-Of these new names, there were 78 that were not in previous versions of HYG and which corresponded to a star in HYG. These are outlined in the file "v38_name_updates.md", which gives the catalog IDs of the stars in HYG that were updated for version 3.8. Note that most of these are not readily naked-eye visible even from a dark site (M brighter than about +7), and so often reflect recent names from sources like NameExoWorlds (https://www.nameexoworlds.iau.org/) rather than older historical names.
-
-###### Earlier versions
-
-For details about previous versions and the changes they made, see version-info.md.
-
-###### General content notes
+##### General content notes
 
 1. All stars now have both an epoch and equinox of 2000.0.  In v2 of the catalog, all three primary source catalogs either had or were adjusted to equinox 2000, but all 3 had different epochs, leading to small position errors at high magnifications.
 2. The Flamsteed numbers now include many that were not in the _Yale Bright Star Catalog_, the
@@ -62,4 +47,12 @@ Fields in the database:
 23. `lum`:  Star's luminosity as a multiple of Solar luminosity.
 24. `var`:  Star's standard variable star designation, when known.
 25. `var_min,` `var_max`:  Star's approximate magnitude range, for variables.  This value is based on the Hp magnitudes for the range in the original Hipparcos catalog, adjusted to the V magnitude scale to match the "mag" field.
+
+##### Additiopnal Information
+
+Details about previous versions (through HYG 3.8) are in version-info.md.
+
+For additional background details, and older versions of the database, visit  http://www.astronexus.com/hyg.
+
+For the most current version of the applications using this database, visit http://www.astronexus.com/endeavour. 
 

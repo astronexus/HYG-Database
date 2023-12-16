@@ -1,8 +1,16 @@
 ### Version changes
 
-The latest version (as of Dec. 5, 2023) is v3.8. 
+The latest version (as of Dec. 15, 2023) is v4.0. 
 
 ##### Previous Versions:
+
+###### v3.8: Update proper names to include more official (IAU) names since previous update
+
+Pull request 16 (https://github.com/astronexus/HYG-Database/pull/16), from June 14, 2019, incorporated a large number of 
+IAU offical star names to the `proper` field in HYG 3.1 and later versions. Since then, there have been a number of updates, with the official IAU site on "naming stars" (https://www.iau.org/public/themes/naming_stars/) showing the current list of IAU-official names as of January 1, 2021, reflecting about a year and a half of updates since the original PR containing a large set of IAU names to add.
+
+Of these new names, there were 78 that were not in previous versions of HYG and which corresponded to a star in HYG. These are outlined in the file "v38_name_updates.md", which gives the catalog IDs of the stars in HYG that were updated for version 3.8. Note that most of these are not readily naked-eye visible even from a dark site (M brighter than about +7), and so often reflect recent names from sources like NameExoWorlds (https://www.nameexoworlds.iau.org/) rather than older historical names.
+
 ###### v3.7: Assign missing HR (Yale Bright Star Catalog) stars
 
 Issue 22 (https://github.com/astronexus/HYG-Database/issues/22) described a set of 98 HR (YBSC) IDs that were not found in HYG. Of these, 82 could be ascribed to HR IDs for multiple star components that are not in HIP, or to objects in YBSC that are not stellar (or otherwise unsuitable for HYG).
