@@ -9,6 +9,8 @@ HYG 4.0 contains 2 updates:
 1. 10 more stars have had proper names added. These come from the 2022 update to names from NameExoWorlds (https://www.nameexoworlds.iau.org/2022approved-names). A list of the updated names is in CURRENT/v40_name_updates.md.
 2. The licensing for HYG v4.0 is Creative Commons CC BY-SA 4.0, unlike previous versions of the HYG catalog.
 
+Although this is a major version update, there is no schema change compared to v3.x. Field names and types are identical to the ones in v3.x.
+
 ---
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
@@ -36,7 +38,7 @@ primary reference for these numbers in the original catalog.  In particular, it 
 5. For stars in Hipparcos that are known to be variable, the variable star designations have been added.  In general,
 stars that were merely suspected of variability ("NSV") were excluded.
 
-Fields in the database:
+Fields in the database (valid for both v3.x and v4.x):
 
 1. `id`: The database primary key.
 2. `hip`: The star's ID in the Hipparcos catalog, if known.
