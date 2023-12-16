@@ -38,11 +38,11 @@ The current HYG catalog is v4.0. v3.0 was originally compiled in 2014. There hav
 See hyg/README.md for details about the HYG catalog.
 
 ### AT-HYG (Tycho-2/Gaia based) HYGLike Subset
-#### Directory /athyg_v2 - Currently 118,971 stars
+#### Directory /athyg_v3 - Currently 118,971 stars
 
 This is a subset of the larger AT-HYG database (https://github.com/astronexus/ATHYG-Database) that mimics the original HYG database as closely as possible. The HYGLike subset contains all the data updates (such as Gaia DR3 distances and velocities) the AT-HYG build was able to collect for HYG stars.
 
-See hyg/athyg_v2/README.md for more details.
+See hyg/athyg_v3/README.md for more details.
 
 ### Miscellany
 #### Directory /misc
