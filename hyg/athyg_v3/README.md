@@ -1,6 +1,6 @@
 ### HYGLike v3.0 (all HYG stars in AT-HYG): 118,971 stars
 
-This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x have Gaia DR3 distance data in AT-HYG v3.0, and thus also in HYGLike v3.0. 
+This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x and HYG v4.0 have Gaia DR3 distance data in AT-HYG v3.0, and thus also in HYGLike v3.0. 
 
 The only difference in field names is the addition of the `*_src` fields from AT-HYG to identify the sources for each of the various data points. These fields can be dropped if desired in an application using the catalog. They are collected at the ends of the CSV rows, so should be easy to remove if desired.
 
