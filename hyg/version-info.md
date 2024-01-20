@@ -204,11 +204,13 @@ No stars have been added or deleted, so there are no changes to the primary "id"
 * April 24, 2023: Changed some deprecated Gliese catalog abbreviations ("NN" and "Wo") to the preferred "GJ". See https://cds.unistra.fr/cgi-bin/Dic-Simbad?GJ for comments on the labels. The original catalog numbers from the first edition of the catalog (in the range 1 - 999) still retain the "Gl" abbreviation.
 
 
-###### v3.0: The original version, released in 2014.
+###### v3.0: The original v3 version
+
+This was developed in 2012-2014, alongside the Endeavour (http://endeavour.astronexus.com) project. For a long time (2014-2023) it was _the_ HYG catalog. v3.0 was the first version to routinely include the full HIPPARCOS catalog. 
 
 ### Older databases (version 2): v2/hygfull.csv, v2/hygxyz.csv
 
-These are still available, but are no longer current or being actively updated, and should be considered deprecated for higher-precision applications.
+These versions were developed in 2008, and are still available, but are no longer current or being actively updated. The full HIPPARCOS catalog is not included; only the brightest stars (brighter than about magnitude +9.0) in HIPPARCOS are included. They should be considered deprecated for higher-precision applications.
 
 #### hygfull.csv:
 
