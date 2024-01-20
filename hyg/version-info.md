@@ -1,8 +1,16 @@
 ### Version changes
 
-The latest version (as of Dec. 15, 2023) is v4.0. 
+The latest version (as of Jan. 20, 2024) is v4.1. 
 
 ##### Previous Versions:
+
+###### v4.0: Minor name updates and major license update
+
+HYG 4.0 contains 2 updates:
+
+1. 10 more stars have had proper names added. These come from the 2022 update to names from NameExoWorlds (https://www.nameexoworlds.iau.org/2022approved-names). A list of the updated names is in CURRENT/v40_name_updates.md.
+2. The licensing for HYG v4.0 is Creative Commons CC BY-SA 4.0, unlike previous versions of the HYG catalog.
+
 
 ###### v3.8: Update proper names to include more official (IAU) names since previous update
 

@@ -68,9 +68,9 @@ Fields in the database (valid for both v3.x and v4.x):
 
 ##### Additional Information
 
-Details about previous versions (through HYG 3.8) are in version-info.md.
+Details about previous versions (through HYG 4.0) are in version-info.md.
 
 For additional background details, and older versions of the database, visit  http://www.astronexus.com/hyg.
 
-For the most current version of the applications using this database, visit http://www.astronexus.com/endeavour. 
+For the most current version of the applications using this database, visit https://endeavour.astronexus.com. 
 
