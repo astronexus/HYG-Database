@@ -44,7 +44,7 @@ This work is licensed under a
 
 This is the original focus of this data collection. HYG combines every identifiable star in the HIPPARCOS, Yale Bright Star, and Gliese (nearby star) catalogs into a combined dataset of the stars' currently best-known positions, brightnesses, spectral types, and various additional catalog IDs such as traditional names and Bayer designations.
 
-The current HYG catalog is v4.0. v3.0 was originally compiled in 2014. There have been a few small changes since then, mostly to add additional ID/label information and to correct a few errors. The most significant was a change in March 2023, to merge a PR that added the official star names from the IAU Working Group on Star Names in 2018, as well as to add a few additional old catalog designations for some nearby stars (e.g., "Ross 128") that may as well be proper names at this point. The final version of v3, v3.8, has only very minor differences from v4.0 in data content; the major version update was done largely to make updated licensing easier.
+The current HYG catalog is v4.1. v3.0 was originally compiled in 2014. There have been a few small changes since then, mostly to add additional ID/label information and to correct a few errors. The most significant was a change in March 2023, to merge a PR that added the official star names from the IAU Working Group on Star Names in 2018, as well as to add a few additional old catalog designations for some nearby stars (e.g., "Ross 128") that may as well be proper names at this point. The final version of v3, v3.8, has only very minor differences from v4.1 in data content; the major version update was done largely to make updated licensing easier.
 
 See hyg/README.md for details about the HYG catalog.
 
