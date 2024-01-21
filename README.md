@@ -14,7 +14,7 @@ HYG 4.1 contains 1 update:
 
 These names are unofficial. They are intended to make these double stars (which, in most cases, are relatively wide) show more consistent labels or names on charts that resolve the double, or lists that show both stars. Without the "B" names, labels on charts or names in lists would often look something like "Revati" and "ζ Psc", and it wouldn't always be clear that the two stars are strongly historically associated.
 
-|HIP ID|HR/Yale ID|Bayer/Flamsteed|HYG 4.1 Name|
+|HIP ID|HR/Yale ID|Bayer/Flamsteed|HYG 4.1 Name| 
 |------|----------|---------------|------------|
 5743|362|ζ Psc|Revati B
 63121|4914|α¹ Cvn|Cor Caroli B
