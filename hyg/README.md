@@ -24,7 +24,6 @@ These names are unofficial. They are intended to make these double stars (which,
 ||4374|ξ UMa|Alula Australis B
 ||6402|36 Oph|Guniibuu B
 
-Note that α¹ CVn really is the dimmer component -- α² is the one officially designated "Cor Caroli" -- and the stars Revati, Marsic, Dziban, Castor, Alula Australis, and Gunibuu have the same Bayer or Flamsteed ID for both components, so these in particular are difficult to disambiguate without having an additional proper name on the "B" component.
 ---
 
 This work is licensed under a
