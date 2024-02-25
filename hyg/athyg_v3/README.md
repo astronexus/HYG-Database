@@ -21,16 +21,16 @@ If your application doesn't use any of the fields described below, AT-HYG's HYGL
 
 Of the 118,971 stars found for the HYGLike subset, over 99% fell into seven basic combinations of source data. Two of these are largely unchanged from the original HYG (except to use Tycho-2 as a basis for positions), but the remaining 5 include at least some data from Gaia DR3:
 
-|Position  |Distance  |Magnitude  |Proper Motions      |Radial Velocities|Total Count
-|----------|----------|-----------|--------------------|-----------------|----------------
-| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3           | Gaia DR3        | 89,686 (75.4 %)
-| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3           | (none)          | 10,381 (8.7 %)
-| Tycho-2  | HIPPARCOS| HIPPARCOS | HYG sources (1)    | (none)          | 8,607 (7.2 %)
-| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3           | HYG sources (2) | 4,750 (4.0 %)
-| Tycho-2  | HIPPARCOS| HIPPARCOS | HYG sources (1)    | HYG sources (2) | 3,327 (2.8 %)
-| Gliese   | Gaia DR3 | Gliese    | Gaia DR3           | Other sources(3)| 822 (0.7 %)
-| HIPPARCOS| Gaia DR3 | HIPPARCOS | Gaia DR3           | Gaia DR3        | 425 (0.4 %)
-| All Others|         |           |                    |                 | 973 (0.8 %)
+|Position  |Distance  |Magnitude  |Proper Motions      |Radial Velocities|Total Count     |Notes
+|----------|----------|-----------|--------------------|-----------------|----------------|-------
+| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3           | Gaia DR3        | 89,686 (75.4 %)| Full position and 3D velocity update from Gaia
+| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3           | (none)          | 10,381 (8.7 %) | Full position and 2D velocity update from Gaia
+| Tycho-2  | HIPPARCOS| HIPPARCOS | HYG sources (1)    | (none)          | 8,607 (7.2 %)  | No major change from HYG
+| Tycho-2  | Gaia DR3 | HIPPARCOS | Gaia DR3           | HYG sources (2) | 4,750 (4.0 %)  | Full position and 2D velocity update from Gaia
+| Tycho-2  | HIPPARCOS| HIPPARCOS | HYG sources (1)    | HYG sources (2) | 3,327 (2.8 %)  | No major change from HYG
+| Gliese   | Gaia DR3 | Gliese    | Gaia DR3           | Other sources(3)| 822 (0.7 %)    | Gliese stars from HYG  w/ position and 2D velocity update from Gaia
+| HIPPARCOS| Gaia DR3 | HIPPARCOS | Gaia DR3           | Gaia DR3        | 425 (0.4 %)    | Full position and 3D velocity update from Gaia
+| All Others|         |           |                    |                 | 973 (0.8 %)    | Various incomplete levels of update
 
 Just under 90% of all HYG stars got significant updates (Gaia DR3) to distance and proper motion. About 76% of HYG stars also got Gaia DR3 values for radial velocities. The remaining 10% of stars with no Gaia updates are generally stars not available in Gaia in the first place, including most stars brighter than about V = +3, or ones where the distance in Gaia was missing.
 
