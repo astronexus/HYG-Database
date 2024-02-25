@@ -1,10 +1,10 @@
-### HYGLike v3.0 (all HYG stars in AT-HYG): 118,971 stars
+### HYGLike v3.1 (all HYG stars in AT-HYG): 118,971 stars
 
-This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x and HYG v4.0 have Gaia DR3 distance data in AT-HYG v3.0, and thus also in HYGLike v3.0. 
+This subset follows the field name and contents for HYG v3.x as closely as possible, for all stars in AT-HYG that have an entry in HYG. The subset is intended as a drop-in replacement for HYG for many applications that use HYG, but with better data. For example, just under 90% of stars in HYG v3.x and HYG v4.0 have Gaia DR3 distance data in AT-HYG v3.1, and thus also in HYGLike v3.1. 
 
 The only difference in field names is the addition of the `*_src` fields from AT-HYG to identify the sources for each of the various data points. These fields can be dropped if desired in an application using the catalog. They are collected at the ends of the CSV rows, so should be easy to remove if desired.
 
-### Differences between original HYG (v3.x / v4.x) and HYGLike subset from AT-HYG (v3.0):
+### Differences between original HYG (v3.x / v4.x) and HYGLike subset from AT-HYG (v3.1):
 
 There are a few small differences from both the original HYG and AT-HYG, mostly to handle fields in HYG that are not currently in AT-HYG, as well as to address a difference in design criteria in the two catalogs. HYG prioritized completeness, while AT-HYG prioritized accuracy, especially for 3D positions and velocities. In particular, as a subset of AT-HYG, HYGLike inherits the AT-HYG design criterion of prioritizing accurate position and velocity information for at least one star in every Tycho-2 star system over identifying every last component of every Tycho-2 star system.
 
