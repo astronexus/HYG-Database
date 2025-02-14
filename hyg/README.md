@@ -33,7 +33,7 @@ This work is licensed under a
 
 #### Previous versions (HYG 2.x, HYG 3.x, directories hyg/v3 and hyg/v2)
 
-These are in the directories hyg/v2 and hyg/v3. As noted above, these have been licensed under Creative Commons BY-SA-2.5.
+These are in the directories hyg/v2 and hyg/v3. As noted above, these have been licensed under Creative Commons BY-SA-2.5. All of these are stored as gzip (.gz) files.
  
 #### General content notes
 
